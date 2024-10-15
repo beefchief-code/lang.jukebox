@@ -1,0 +1,16 @@
+@host=http://localhost:3000
+
+### Get all users
+GET {{host}}/users
+
+### Get single user
+GET {{host}}/users/3
+
+### Add new playlist
+POST {{host}}/users/3/playlists
+Content-Type: application/json
+
+{
+  "name": "Playlist Foobar",
+  "description": "It's a new playlist!"
+}
